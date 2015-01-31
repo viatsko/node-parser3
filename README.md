@@ -28,7 +28,9 @@ app.use(gateway(path.resolve('./public'), {
 
 Если middleware планируется использовать с imprimatur1, то нужно добавить соответствующую опцию (по сути опция эмулирует RewriteEngine-директиву на передачу управления основному скрипту):
 
+```
 app.use(gateway(path.resolve('./public'), {
   '.html': path.resolve('./cgi/parser3.cgi'),
   imprimatur: true
 }));
+```
