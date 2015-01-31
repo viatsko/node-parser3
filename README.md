@@ -15,3 +15,20 @@ npm install
 ```
 npm start
 ```
+
+Из-за особенностей Parser'а проект содержит fork node-библиотеки gateway (см. ./lib/gateway.js).
+
+Смена расширения файлов или маппинга на другой cgi-процесс производится в app.js изменением параметров gateway middleware:
+
+```
+app.use(gateway(path.resolve('./public'), {
+  '.html': path.resolve('./cgi/parser3.cgi')
+}));
+```
+
+Если middleware планируется использовать с imprimatur1, то нужно добавить соответствующую опцию (по сути опция эмулирует RewriteEngine-директиву на передачу управления основному скрипту):
+
+app.use(gateway(path.resolve('./public'), {
+  '.html': path.resolve('./cgi/parser3.cgi'),
+  imprimatur: true
+}));
