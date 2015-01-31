@@ -20,10 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(gateway(path.resolve('./public'), {
-  '.html': path.resolve('./cgi/parser3.cgi'),
-  env: {
-    PATH_INFO: ''
-  }
+  '.html': path.resolve('./cgi/parser3.cgi')
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
