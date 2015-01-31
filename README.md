@@ -20,7 +20,7 @@ npm start
 
 Смена расширения файлов или маппинга на другой cgi-процесс производится в app.js изменением параметров gateway middleware:
 
-```
+```js
 app.use(gateway(path.resolve('./public'), {
   '.html': path.resolve('./cgi/parser3.cgi')
 }));
@@ -28,7 +28,7 @@ app.use(gateway(path.resolve('./public'), {
 
 Если middleware планируется использовать с imprimatur1, то нужно добавить соответствующую опцию (по сути опция эмулирует RewriteEngine-директиву на передачу управления основному скрипту):
 
-```
+```js
 app.use(gateway(path.resolve('./public'), {
   '.html': path.resolve('./cgi/parser3.cgi'),
   imprimatur: true
