@@ -16,7 +16,7 @@ npm install
 npm start
 ```
 
-Из-за особенностей Parser'а проект содержит fork node-библиотеки gateway (см. ./lib/gateway.js).
+Из-за особенностей Parser'а проект содержит fork node-библиотеки gateway (см. [lib/gateway.js](lib/gateway.js)).
 
 Смена расширения файлов или маппинга на другой cgi-процесс производится в app.js изменением параметров gateway middleware:
 
