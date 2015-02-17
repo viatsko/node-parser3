@@ -2,6 +2,8 @@
 
 [![Join the chat at https://gitter.im/dwr/node-parser3](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dwr/node-parser3?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+<img src="node-parser3.png" />
+
 Пример хостинга проекта на Parser 3 на node web-сервере.
 
 В cgi/ находится бинарник Parser 3 для Mac OS X, если вам нужен другой - просто замените.
