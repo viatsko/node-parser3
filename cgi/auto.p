@@ -8,7 +8,7 @@ $CHARSETS[
 #	$.koi8-r[$charsetsdir/koi8-r.cfg]
 #	$.koi8-u[$charsetsdir/koi8-u.cfg]
 #	$.windows-1250[$charsetsdir/windows-1250.cfg]
-#	$.windows-1251[$charsetsdir/windows-1251.cfg]
+	$.windows-1251[$charsetsdir/windows-1251.cfg]
 #	$.windows-1254[$charsetsdir/windows-1254.cfg]
 #	$.windows-1257[$charsetsdir/windows-1257.cfg]
 #	$.x-mac-cyrillic[$charsetsdir/x-mac-cyrillic.cfg]

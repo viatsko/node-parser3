@@ -19,8 +19,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(gateway(path.resolve('./public'), {
-  '.html': path.resolve('./cgi/parser3.cgi')
+app.use(gateway(path.resolve('./www'), {
+  '.html': path.resolve('./cgi/parser3.cgi'),
+  imprimatur: false
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
