@@ -19,10 +19,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(gateway(path.resolve('./www'), {
-  '.html': path.resolve('./cgi/parser3.cgi'),
-  imprimatur: false
-}));
+// Public default
+//app.use(gateway(path.resolve('./www'), {
+//  '.html': path.resolve('./cgi/parser3.cgi'),
+//  imprimatur: false
+//}));
+
+// [custom-public-dir-config]
 
 app.use(express.static(path.join(__dirname, 'public')));
 
